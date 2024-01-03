@@ -20,8 +20,8 @@ req.onload = function () {
   console.log(...pop);
 
   //c. Print the following details name, capital, flag using forEach function
-  data.forEach((element) => {
-    console.log(element.name + "\t" + element.capital + "\t" + element.flag);
+  data.forEach((ele) => {
+    console.log(ele.name + "\t" + ele.capital + "\t" + ele.flag);
   });
 
   //d. Print the total population of countries using reduce function
@@ -31,10 +31,10 @@ req.onload = function () {
   console.log("Total Population: " + total);
 
   //e. Print the country which uses US Dollars as currency
-  let currency = data.filter((element) => {
-    for (let key in element.currencies) {
-      if (element.currencies[key].code === "USD") {
-        return element;
+  let currency = data.filter((ele) => {
+    for (let key in ele.currencies) {
+      if (ele.currencies[key].code === "USD") {
+        return ele;
       }
     }
   });
